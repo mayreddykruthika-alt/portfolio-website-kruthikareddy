@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Media Query Width Example</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.box {
+  background-color: gray;
+  color: white;
+  padding: 40px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}/*@media screen {
+  h2{
+    color:blue;
+  }
+}
+@media print {
+  body{
+    background-color: chartreuse;
+    color: black;
+  }
+}
+@media all{
+  h2{
+    color:rgb(0, 0, 0);
+  }
+}
+@media (max-width:500px ){
+  body{
+    background-color: rgb(191, 91, 245);
+    color:rgb(255, 127, 242);
+  }
+}
+@media (min-width:700px ){
+  body{
+    background-color: chartreuse;
+    color: black;
+  }
+  .box{
+    background-color: burlywood;
+    color:aquamarine;
+  }
+}
+@media (orientation: portrait){
+  body{
+    background-color: chartreuse;
+    color: black;
+  }
+}*/
+@media (max-width:350px){
+  .box{
+    background-color:red;
+  }
+}
+@media (min-width:351px ), (max-width:849px){
+  .box{
+    background-color: blue;
+  }
+}
+@media (min-width:850px){
+  .box{
+    background-color: greenyellow;
+  }
+}
+
+  
+
+</style>
+</head>
+
+<body>
+
+<h2>Media Query Width Features</h2>
+<p>Resize the browser window to see the background color change.</p>
+
+<div class="box">
+  Resize the screen<br>
+  Color changes using media queries
+</div>
+
+</body>
+</html>

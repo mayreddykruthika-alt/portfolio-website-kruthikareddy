@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        body{
+            text-align: center;
+            margin-top: 100px;
+            font-family: cursive;
+            background: linear-gradient(to right, rgb(123, 239, 250),rgb(204, 133, 248));
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            padding: 8px;
+            margin: 5px;
+            width: 150px;
+            border: 1px solid black;
+        }
+        button{
+          border: 3px solid black;
+            padding: 8px 15px;
+            margin: 5px;
+            font-size: 20px;
+        }
+        h2{
+            color: whitesmoke;
+        }
+        .main{
+          border: 2px solid black;
+          background: rgba(115, 115, 115, 0.55);
+          padding: 40px 50px;
+          box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+          border-radius: 10px;
+        }
+        .card{
+          border: 2px solid black;
+          background: rgba(115, 115, 115, 0.55);
+          padding: 20px 30px ;
+          border-radius: 30px ;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Arithmetic Calculator</h1>
+    <div class="main">
+      <div class="card">
+        <input type="number" id="num1" placeholder="Enter First Number"><br>
+        <input type="number" id="num2" placeholder="Enter Second Number"><br>
+      </div>
+      <br>
+    <button onclick="add()">+</button>
+    <button onclick="subtract()">-</button>
+    <button onclick="multiply()">*</button>
+    <button onclick="divide()">/</button>
+
+    <h2 id="result">Result: </h2>
+    </div>
+    
+
+<script>
+      const number1 = document.getElementById("num1");
+      const number2 = document.getElementById("num2");
+      const result = document.getElementById("result");
+      function add(){
+        let x1 =parseInt( num1.value);
+        let x2 = parseInt(num2.value);
+        let result=x1+x2;
+        document.getElementById("result").textContent="Result: " +result;
+      }
+      function subtract(){
+        let x1 =parseInt( num1.value);
+        let x2 = parseInt(num2.value);
+        let result=x1-x2;
+        document.getElementById("result").textContent="Result: " +result;
+      }
+      function multiply(){
+        let x1 =parseInt( num1.value);
+        let x2 = parseInt(num2.value);
+        let result=x1*x2;
+        document.getElementById("result").textContent="Result: " +result;
+      }
+      function divide(){
+        let x1 =parseInt( num1.value);
+        let x2 = parseInt(num2.value);
+          let result=x1/x2;
+        document.getElementById("result").textContent="Result: " +result;
+      }
+</script>
+</body>
+</html>

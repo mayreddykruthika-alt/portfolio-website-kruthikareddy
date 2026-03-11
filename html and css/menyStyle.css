@@ -1,0 +1,68 @@
+.bodydetails{
+  font-size: 30px;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  font-size: 20px;
+  background: linear-gradient( rgb(114, 161, 173),rgb(255, 167, 167),rgb(255, 144, 255));
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+  background-size:cover;
+}
+h1{
+  font-size: 50px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer {
+  text-align: center;
+  color: gray;
+  margin-top: 30px;
+}
+.main{
+  margin: 2%;
+  border: 7px solid #ffffff;
+  border-radius: 20px;
+  padding: 15px;
+  gap: 10px 20px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.maincontainer{
+  border: 1px solid #ffffff ;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 10px;         
+  column-gap: 20px;             
+  padding: 30px;                 
+  align-items: center;
+}
+
+#image{
+  height:200px;
+}
+.image-card{
+  background-color: #ffffff;
+  border: 7px solid #000000;
+  border-radius: 20px;
+  padding: 15px;
+  align-items: center;
+  display:flex;
+  flex:1;
+  flex-direction: row;
+}
+.image-card:hover{
+  transform: translateX(-5px);
+  transform: translateY(-5px);
+  box-shadow: 10px 10px 40px rgb(0, 0, 0);
+}
+.menu-card{
+  background-color: #ffffff;
+  align-items: center;  
+  display:flex;
+  flex:1;
+  flex-direction: column;
+  padding: 15px;
+}

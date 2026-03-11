@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      callback and schedular
+    </title>
+  </head>
+  <body>
+    differtent types of functions!!!!
+    <script>
+    // callbacks and schedules
+
+    /* method using function keyword */
+    let greet = function(name,callback){
+      console.log(name);
+      callback();
+    }
+    let SayHai = function(){
+      console.log("konichiwa, ohayo gosaimasu");
+    }
+    greet("kruthikaaaaaa",SayHai);
+    /* method using arrow keyword*/
+    let greet1 = (name,callback1,callback) => {
+      console.log(name);
+      callback1();
+      callback();
+    }
+    let saybye = () => {
+      console.log("sayonara , oyasumi");
+    }
+    let sayseeyou = () => {
+      console.log("jaa nee");
+    }
+    greet1("siriiiiii",sayseeyou,saybye);
+
+     // schedular :- schedules the call back function
+     /* 
+        setInterval(callback , delay in milliseconds );
+        setTimeout(id);
+        clearInterval(id);
+        clearTimeout(id);
+     */
+    let count=0;
+    let id = setInterval( () => {    // setInetrval method 
+      count++;
+      console.log(count);
+      if(count === 3)              // clearTimeout this stops the printing of sanjii... after 3 seconds .
+      clearTimeout(id2);
+      if(count === 10)
+      {
+        let mess = prompt("enter stop to stop the counter");
+        if(mess === "stop"){
+          clearInterval(id);          // clearInterval method 
+          console.log("Counter stopped");
+        }
+      }
+    } , 1000);
+    let id2 = setTimeout(() => {              // setTimeout method
+        console.log("sanjiiiiii!! asameshi va nani??"); // this prints the message in quotes after 3 seconds .
+      }, 3000);
+    
+  </script>
+  </body>
+</html>

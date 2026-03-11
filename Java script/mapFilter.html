@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let list = [10, 20, 30];
+        // num represents element of the array 
+        let result = list.map((num) => {
+            return num + 10
+        });
+        let result2 = list.map((num) => {
+            return num * 2
+        });
+        console.log(list);
+        console.log(result);
+        console.log(result2);
+
+        // extract prices from products
+        let products = [
+            {name : "Letters To Krishna", price : 300}, 
+            {name : "Radha : A Tale of Divine Love", price : 299}, 
+            {name : "Little Blue Book on Krishna", price : 250}
+        ];
+        let prices = products.map((p) => p.price);
+        let names = products.map((n) => n.name);
+        console.log(names);
+        console.log(prices);
+
+        // convert product names to uppercase 
+        let pnames = products.map((na) => na.name.toUpperCase());
+        console.log(pnames);
+        let k_name = ['Govind', 'Gopal', 'Giridhar'];
+        let cap_name = k_name.map((kn) => kn.toUpperCase());
+        console.log(cap_name);
+
+        // take array marks and add grace marks 5
+        let marks = [80, 85, 90];
+        let grace_marks = marks.map((m) => {
+            return m + 5;
+        });
+        console.log(grace_marks);
+
+        // get even numbers form given list
+        let nums = [1, 2, 3, 4, 5, 6, 7, 8];
+        let even = nums.filter((n) => n%2 === 0);
+        console.log(even);
+
+        // get numbers greater than 30
+        let big = [23, 56, 34, 78, 12, 89, 46];
+        let thirty = big.filter((n) => n > 30);
+        console.log(thirty);
+
+        // get products with price above 100
+        let products2 = [
+            {name : "Letters To Krishna", price : 300}, 
+            {name : "Radha : A Tale of Divine Love", price : 299}, 
+            {name : "Krishna Keychain", price : 50}
+        ];
+        //let hund = products2.filter((n) => n.price > 100);
+        /*let hund = products2.filter((p)=>{
+            if(p.price > 100)
+                return p.name
+        });
+        let n1 = hund.map(n => n.name);*/
+        let hund = products2.filter((p) => p.price > 100).map(p=>p.name);
+        console.log(hund);
+
+        // sum of array elements
+        let arr = [12, 34, 56];
+        let sum = arr.reduce((num, sum) => sum + num, 0);
+        console.log(sum);
+
+        // finding max using reduce 
+        let max = arr.reduce((max, num) => {
+            return num > max ? num : max;
+        }, arr[0]);
+        console.log(max);
+    </script>
+</body>
+</html>

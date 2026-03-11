@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Browser'storage</title>
+  </head>
+  <body>
+
+  </body>
+  <script>
+    //set item method  => .setItem("key" , value)
+    localStorage.setItem("name","kruthika");// to set the values in local storage
+    localStorage.setItem("id",JSON.stringify(38));
+    localStorage.setItem("city","Welcome to MyCity");
+    let Hobbies = ["crocheting","Music","dance","art & craft"];
+    localStorage.setItem("hobbies are" , JSON.stringify(Hobbies));
+    let student= {
+      name:"xyx",
+      rollNo:"123",
+      percentage: 98.9
+    };
+   /* localStorage.setItem("Student object",student); */
+   localStorage.setItem("Student object",JSON.stringify(student));
+   //get item method  => .getItem(key)
+   console.log(localStorage.getItem("name"));//it gives kruthika in console.
+   console.log(JSON.parse(localStorage.getItem("id")));
+   console.log(JSON.parse(localStorage.getItem("hobbies are")));
+   console.log(JSON.parse(localStorage.getItem("Student object")));
+   // remove method  => .removeItem(key)
+   localStorage.removeItem("city");
+  </script>
+
+  </html>

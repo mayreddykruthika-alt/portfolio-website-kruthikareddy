@@ -1,0 +1,81 @@
+  body {
+  margin: 0;
+  font-family: Arial;
+  background: #f2f6ff;
+}
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-top: 20px;
+  animation: zoom 3s;
+}
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background: rgb(245, 73, 110);
+  color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+nav {
+  background: #66001b;
+  text-align: center;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: rgb(194, 196, 242);
+}
+
+.box {
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  animation: zoom 3s;
+}
+
+footer {
+  background: #66001b;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+
+/* Animations */
+
+.fade-in {
+  animation: fade 3s;
+}
+
+.slide-in {
+  animation: slide 3s;
+}
+
+@keyframes fade {
+  from {opacity:0;}
+  to {opacity:1;}
+}
+
+@keyframes slide {
+  from {transform: translateY(30px);}
+  to {transform: translateY(0);}
+}
+
+@keyframes zoom {
+  from {transform: scale(0.7);}
+  to {transform: scale(1);}
+}

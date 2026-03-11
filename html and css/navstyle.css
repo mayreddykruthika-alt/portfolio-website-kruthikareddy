@@ -1,0 +1,19 @@
+.background{
+  background-color: black;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+}
+h1{
+  font-family: "Press Start 2P",'Times New Roman', Times, serif;
+}
+h2{
+  font-size: 18px;
+  font-family: "Press Start 2P",'Times New Roman', Times, serif;
+}
+.navbar{
+  background-color:aquamarine;
+  border-radius: 15px;
+  padding:18px;
+  width:fit-content;
+  color:black;
+}
